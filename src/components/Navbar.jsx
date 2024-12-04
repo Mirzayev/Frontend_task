@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <div className="navbar mt-[45px] relative">
             {/* Image Background */}
-            <div className="absolute inset-0 z-0  ">
+            <div className="absolute inset-0 z-0 w-full ">
                 <img
                     className="w-full h-full object-cover opacity-[1000]"
                     src={bags}
