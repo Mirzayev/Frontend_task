@@ -1,0 +1,18 @@
+.header{
+ position: relative;
+ background-image: linear-gradient(to right, #9796F0 , #FBC7D4 ); /* Gradient fon */
+    height: 40px;
+ color: #EEF1F6;
+ text-align: center;
+ padding-top: 125px;
+ padding-bottom: 180px;
+
+}
+
+.wave {
+    position: absolute;
+    top: -210px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
