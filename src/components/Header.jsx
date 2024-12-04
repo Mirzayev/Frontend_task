@@ -4,6 +4,7 @@ import { Button } from "antd";
 import Navbar from "./Navbar.jsx";
 import Banner from "./Banner.jsx";
 import PopularProduct from "./PopularProduct.jsx";
+import Creative from "./Creative.jsx";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -80,6 +81,7 @@ export default function Header() {
 
             <Banner />
             <PopularProduct />
+            <Creative/>
         </div>
     );
 }

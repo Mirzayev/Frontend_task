@@ -22,7 +22,7 @@ export default function PopularProduct() {
                         Товары, которые наиболее часто заказывают наши клиенты
                     </p>
                 </div>
-                <Button className="bg-[#1FAB8A] text-white rounded-lg px-6 py-2 hover:opacity-90 hidden lg:block">
+                <Button className="bg-[#1FAB8A] text-white rounded-lg px-6 h-full py-3 hover:opacity-90 hidden lg:block ">
                     Все товары
                 </Button>
             </div>
