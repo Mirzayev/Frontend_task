@@ -2,7 +2,8 @@ import Header from "./components/Header.jsx";
 import Layout from "./pages/LayoutPage/Layout.jsx";
 import {createBrowserRouter, RouterProvider} from "react-router";
 import HomePage from "./pages/HomePage.jsx";
-import Seam from "./pages/Seam.jsx";
+import Seam from "./pages/seam/Seam.jsx";
+import AllProduct from "./pages/all-product/AllProduct.jsx";
 
 export default function App() {
 
@@ -21,8 +22,8 @@ export default function App() {
                     element: <Seam/>
                 },
                 {
-                    path: "/",
-                    element: <HomePage/>
+                    path: "/all-product",
+                    element: <AllProduct/>
                 }
             ]
         }

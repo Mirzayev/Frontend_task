@@ -68,15 +68,15 @@ export default function Header() {
 
             {/* Mobil Menyu */}
             <div
-                className={`absolute top-[80px] left-0 w-full bg-white shadow-lg rounded-lg transition-all duration-300 z-20 overflow-hidden ${
+                className={`absolute top-[80px] left-0 w-full bg-white shadow-lg rounded-lg transition-all duration-300 z-[110] overflow-hidden ${
                     isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
                 }`}
             >
                 <div className="flex flex-col items-start py-4 px-6 gap-4 text-lg font-semibold">
                     <NavLink to="/" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Наборы</NavLink>
-                    <NavLink to="" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Все товары</NavLink>
+                    <NavLink to="/all-product" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Все товары</NavLink>
                     <NavLink to="/seam" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Пошив</NavLink>
-                    <NavLink to="" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Производство</NavLink>
+                    <NavLink to="/" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Производство</NavLink>
                 </div>
             </div>
 

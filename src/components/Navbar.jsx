@@ -22,7 +22,7 @@ export default function Navbar() {
                     <NavLink to="/" className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Наборы
                     </NavLink>
-                    <NavLink to="" className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
+                    <NavLink to="/all-product" className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Все товары
                     </NavLink>
                     <NavLink
@@ -31,12 +31,12 @@ export default function Navbar() {
                         Пошив
                     </NavLink>
                     <NavLink
-                        to="/seam"
+                        to="/"
                         className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Производство
                     </NavLink>
                     <NavLink
-                        to="/seam"
+                        to="/"
                         className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Информация
                     </NavLink>
