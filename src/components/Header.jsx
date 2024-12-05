@@ -8,6 +8,7 @@ import Creative from "./Creative.jsx";
 import PlaceOrder from "./PlaceOrder.jsx";
 import IdeaMerchandise from "./IdeaMerchandise.jsx";
 import Partners from "./Partners.jsx";
+import Footer from "./Footer.jsx"
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -91,6 +92,7 @@ export default function Header() {
             <PlaceOrder/>
             <IdeaMerchandise/>
             <Partners/>
+            <Footer/>
         </div>
     );
 }
