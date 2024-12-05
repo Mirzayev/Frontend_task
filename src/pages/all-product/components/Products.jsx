@@ -23,7 +23,7 @@ const products = [
 
 export default function ProductPage() {
     return (
-        <div className="container mx-auto  py-10">
+        <div className="container mx-auto sm:px-5 px-1 py-10">
             <div style={{scrollbarWidth:'none'}} className="flex justify-between items-center mb-8 gap-6 overflow-auto my-10 ">
                 <Select defaultValue="Все товары" style={{ width: 200 }}>
                     <Option value="all">Все товары</Option>
