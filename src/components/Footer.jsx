@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.png';
 
 export default function Footer() {
     return (
-        <div className="footer relative mt-20">
+        <div className="footer relative pt-20">
             <div className="absolute z-10 h-full w-full">
                 <img className="h-full w-full object-cover" src={bgFooter} alt="Footer Background" />
             </div>
