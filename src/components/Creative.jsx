@@ -4,9 +4,9 @@ import { Button } from "antd";
 
 export default function Creative() {
     return (
-        <div className="creative bg-white pt-20 max-w-[1536px] mx-auto">
+        <div className="creative bg-white pt-20 max-w-[1536px] ">
             {/* Wrapper div */}
-            <div className="bg-[#F5F5F5] flex flex-col lg:flex-row items-center justify-between px-5 py-10 lg:py-0">
+            <div className="bg-[#F5F5F5] flex flex-col lg:flex-row items-center  px-5 py-10 lg:py-0">
                 {/* Left Side: Content */}
                 <div className="max-w-[958px]  w-full mb-6 lg:mb-0 pt-10">
                     <div className={"lg:w-full w-40 flex justify-center"}><img src={creative} alt="Creative" className="w-full lg:max-w-[300px]"/></div>
@@ -23,8 +23,8 @@ export default function Creative() {
                 </div>
 
                 {/* Right Side: Product Image */}
-                <div className="lg:w-[700px] w-full flex justify-center lg:justify-end">
-                    <img src={product} alt="Product" className="w-full max-w-[300px] lg:max-w-full" />
+                <div className="lg:w-[700px] w-full flex justify-center lg:justify-end mr-5 mt-8">
+                    <div className={"lg:p-10  bg-back-gradient rotate-[10deg] rounded-xl"}><img src={product} alt="Product" className="w-full max-w-[300px] lg:max-w-full rotate-[-10deg]"/></div>
                 </div>
             </div>
         </div>

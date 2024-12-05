@@ -5,6 +5,8 @@ import Navbar from "./Navbar.jsx";
 import Banner from "./Banner.jsx";
 import PopularProduct from "./PopularProduct.jsx";
 import Creative from "./Creative.jsx";
+import PlaceOrder from "./PlaceOrder.jsx";
+import IdeaMerchandise from "./IdeaMerchandise.jsx";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +16,9 @@ export default function Header() {
     };
 
     return (
-        <div className="bg-back-gradient pt-10 relative">
+        <div className=" max-w-[1536px] mx-auto">
+            <div className={"bg-back-gradient pt-10 relative"}>
+
             <div className="flex items-center gap-10 justify-between px-4 lg:px-10 xl:px-20 max-w-[1536px] mx-auto">
                 {/* Logo */}
                 <img className="xl:max-w-[487px] lg:max-w-80 max-w-52" src={logo} alt="logo" />
@@ -80,8 +84,11 @@ export default function Header() {
             </div>
 
             <Banner />
+            </div>
             <PopularProduct />
             <Creative/>
+            <PlaceOrder/>
+            <IdeaMerchandise/>
         </div>
     );
 }
