@@ -1,11 +1,15 @@
-
+import ProductPage from "./components/Products.jsx";
+import IdeaMerchandise from "../../components/IdeaMerchandise.jsx";
+import Banner from "../seam/components/Banner.jsx";
 
 
 export default function AllProduct(){
 
     return(
         <div>
-            This is all product
+            <Banner/>
+          <ProductPage/>
+            <IdeaMerchandise/>
         </div>
     )
 }
