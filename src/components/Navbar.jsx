@@ -1,4 +1,5 @@
 import bags from '../assets/images/bags.png';
+import {NavLink} from "react-router";
 
 export default function Navbar() {
     return (
@@ -18,21 +19,27 @@ export default function Navbar() {
             >
                 {/* Left Menu Items */}
                 <div className="flex items-center gap-6 h-full">
-                    <p className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
+                    <NavLink to="/" className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Наборы
-                    </p>
-                    <p className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
+                    </NavLink>
+                    <NavLink to="" className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Все товары
-                    </p>
-                    <p className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
+                    </NavLink>
+                    <NavLink
+                        to="/seam"
+                        className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Пошив
-                    </p>
-                    <p className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
+                    </NavLink>
+                    <NavLink
+                        to="/seam"
+                        className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Производство
-                    </p>
-                    <p className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
+                    </NavLink>
+                    <NavLink
+                        to="/seam"
+                        className="hover:bg-black h-full flex items-center hover:text-white px-6 rounded-[6px] transition-all font-semibold cursor-pointer">
                         Информация
-                    </p>
+                    </NavLink>
                 </div>
 
                 {/* Right Side Content */}

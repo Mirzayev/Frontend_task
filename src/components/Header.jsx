@@ -2,13 +2,8 @@ import { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { Button } from "antd";
 import Navbar from "./Navbar.jsx";
-import Banner from "./Banner.jsx";
-import PopularProduct from "./PopularProduct.jsx";
-import Creative from "./Creative.jsx";
-import PlaceOrder from "./PlaceOrder.jsx";
-import IdeaMerchandise from "./IdeaMerchandise.jsx";
-import Partners from "./Partners.jsx";
 import Footer from "./Footer.jsx"
+import {NavLink} from "react-router";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,22 +72,16 @@ export default function Header() {
                     isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
                 }`}
             >
-                <ul className="flex flex-col items-start py-4 px-6 gap-4 text-lg font-semibold">
-                    <li className="cursor-pointer hover:text-[#1FAB8A] transition-all">Наборы</li>
-                    <li className="cursor-pointer hover:text-[#1FAB8A] transition-all">Все товары</li>
-                    <li className="cursor-pointer hover:text-[#1FAB8A] transition-all">Пошив</li>
-                    <li className="cursor-pointer hover:text-[#1FAB8A] transition-all">Производство</li>
-                </ul>
+                <div className="flex flex-col items-start py-4 px-6 gap-4 text-lg font-semibold">
+                    <NavLink to="/" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Наборы</NavLink>
+                    <NavLink to="" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Все товары</NavLink>
+                    <NavLink to="/seam" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Пошив</NavLink>
+                    <NavLink to="" className="cursor-pointer hover:text-[#1FAB8A] transition-all">Производство</NavLink>
+                </div>
             </div>
 
-            <Banner />
             </div>
-            <PopularProduct />
-            <Creative/>
-            <PlaceOrder/>
-            <IdeaMerchandise/>
-            <Partners/>
-            <Footer/>
+
         </div>
     );
 }
