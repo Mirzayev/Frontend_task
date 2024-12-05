@@ -7,6 +7,7 @@ import PopularProduct from "./PopularProduct.jsx";
 import Creative from "./Creative.jsx";
 import PlaceOrder from "./PlaceOrder.jsx";
 import IdeaMerchandise from "./IdeaMerchandise.jsx";
+import Partners from "./Partners.jsx";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -89,6 +90,7 @@ export default function Header() {
             <Creative/>
             <PlaceOrder/>
             <IdeaMerchandise/>
+            <Partners/>
         </div>
     );
 }
